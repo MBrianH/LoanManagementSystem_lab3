@@ -1,0 +1,127 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>LoanManagementSystem</RootNamespace>
+    <AssemblyName>LoanManagementSystem</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="3.0.0" />
+  </ItemGroup>
+
+  <!-- Tell Visual Studio that these source files are Windows Forms. -->
+  <ItemGroup>
+    <Compile Update="Views\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\SystemAccountSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\SystemAccountSetupForm.Designer.cs">
+      <DependentUpon>SystemAccountSetupForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\SystemAccountSetupForm.resx">
+      <DependentUpon>SystemAccountSetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\ClientManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\ClientManagementForm.Designer.cs">
+      <DependentUpon>ClientManagementForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\ClientManagementForm.resx">
+      <DependentUpon>ClientManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\LoanApplicationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\LoanApplicationsForm.Designer.cs">
+      <DependentUpon>LoanApplicationsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\LoanApplicationsForm.resx">
+      <DependentUpon>LoanApplicationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\LoanDecisionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\LoanDecisionsForm.Designer.cs">
+      <DependentUpon>LoanDecisionsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\LoanDecisionsForm.resx">
+      <DependentUpon>LoanDecisionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\LoanPayoutsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\LoanPayoutsForm.Designer.cs">
+      <DependentUpon>LoanPayoutsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\LoanPayoutsForm.resx">
+      <DependentUpon>LoanPayoutsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\RepaymentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\RepaymentsForm.Designer.cs">
+      <DependentUpon>RepaymentsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\RepaymentsForm.resx">
+      <DependentUpon>RepaymentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\RepaymentScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\RepaymentScheduleForm.Designer.cs">
+      <DependentUpon>RepaymentScheduleForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\RepaymentScheduleForm.resx">
+      <DependentUpon>RepaymentScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\ActiveLoansForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\ActiveLoansForm.Designer.cs">
+      <DependentUpon>ActiveLoansForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\ActiveLoansForm.resx">
+      <DependentUpon>ActiveLoansForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\ReportsForm.Designer.cs">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\ReportsForm.resx">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Views\StaffManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\StaffManagementForm.Designer.cs">
+      <DependentUpon>StaffManagementForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Views\StaffManagementForm.resx">
+      <DependentUpon>StaffManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
